@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "axm audit",
+  "label": "axm-init",
   "message": "100/100 (A)",
   "color": "brightgreen",
   "namedLogo": "python",
