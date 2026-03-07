@@ -199,7 +199,7 @@ class TestPatchAll:
 
         publish_file = tmp_path / ".github" / "workflows" / "publish.yml"
         publish_file.parent.mkdir(parents=True, exist_ok=True)
-        publish_file.write_text("name: Publish\\n\\njobs:\\n  build:\\n")
+        publish_file.write_text("name: Publish\n\njobs:\n  build:\n")
         patch_publish(tmp_path, "my-lib")
         content = publish_file.read_text()
         assert "tags:" in content
